@@ -1,6 +1,10 @@
- public class Main {
+package main.java;
+
+public class Main {
         public static void main(String[] args) {
-            BonusService service = new BonusService();
+            // shop1
+            System.out.println("shop1");
+            BonusService service = new BonusService(); // limit 500
 
             long bonusBelowLimitForRegistered = service.calcBonus(1000, true);
             System.out.println(bonusBelowLimitForRegistered);
@@ -13,6 +17,15 @@
             System.out.println();
             long bonusOverLimitForUnregistered = service.calcBonus(200000, false);
             System.out.println(bonusOverLimitForUnregistered);
+
+            // shop 2
+            System.out.println("shop2");
+            BonusService shop2Service = new BonusService(11000);
+
+            long bonusOverLimitForRegistered2 = shop2Service.calcBonus(10000000, true);
+            System.out.println(bonusOverLimitForRegistered2);
+            System.out.println();
+
         }
     }
 
