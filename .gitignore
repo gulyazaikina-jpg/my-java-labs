@@ -2,6 +2,10 @@
 .idea/
 *.iml
 
+# IntelliJ build output
+out/
+**/out/
+
 # Maven
 target/
 **/target/
@@ -12,3 +16,4 @@ target/
 # OS
 .DS_Store
 Thumbs.db
+
