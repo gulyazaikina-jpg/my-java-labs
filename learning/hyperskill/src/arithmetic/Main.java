@@ -1,4 +1,4 @@
-package learning.hyperskill.arithmetic;
+package arithmetic;
 
 import java.util.Scanner;
 
